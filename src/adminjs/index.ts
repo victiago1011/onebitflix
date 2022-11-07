@@ -8,7 +8,7 @@ AdminJs.registerAdapter(AdminJsSequelize)
 
 export const adminJs = new AdminJs({
   databases: [sequelize],
-  rootPath: '/admin',
+  rootPath: '/',
   resources: adminJsResources,
   branding: {
     companyName: 'OneBitFlix',
