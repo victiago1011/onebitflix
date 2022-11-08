@@ -9,10 +9,10 @@ const database_1 = require("./database");
 const app = (0, express_1.default)();
 app.use(express_1.default.static('public'));
 app.use(adminjs_1.adminJs.options.rootPath, adminjs_1.adminJsRouter);
-const PORT = process.env.port || 3000;
-app.listen(PORT, () => {
+//const port = process.env.PORT || 3000;
+app.listen(process.env.PORT || 3000, () => {
     database_1.sequelize.authenticate().then(() => {
         console.log('DB connection successfull.');
     });
-    console.log(`Server started successfuly at port ${PORT}.`);
+    console.log(`Server started successfuly at port.`);
 });
