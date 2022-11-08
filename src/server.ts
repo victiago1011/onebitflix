@@ -8,7 +8,7 @@ app.use(express.static('public'))
 
 app.use(adminJs.options.rootPath, adminJsRouter)
 
-const PORT = process.env.port || 3000
+const PORT = process.env.port || 8080
 
 app.listen(PORT, () => {
   sequelize.authenticate().then(() => {
