@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "tsc",
-    "start": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
