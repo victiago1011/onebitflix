@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.episodeResourceFeatures = exports.episodeResourceOptions = void 0;
-const path_1 = __importDefault(require("path"));
+const path = __importDefault(require("path"));
 const upload_1 = __importDefault(require("@adminjs/upload"));
 exports.episodeResourceOptions = {
     navigation: 'Catálogo',
@@ -18,7 +18,7 @@ exports.episodeResourceFeatures = [
         provider: {
             aws: {
               region: 'us-east-1',
-              bucket: 'bucket-onebitflix-victor',
+              bucket: path.join('bucket-onebitflix-victor'),
              }
             /*local: {
                 bucket: path_1.default.join(__dirname, '../../../uploads')

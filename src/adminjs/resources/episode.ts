@@ -17,7 +17,7 @@ export const episodeResourceFeatures: FeatureType[] = [
     provider: {
         aws: {
         region: 'us-east-1',
-        bucket: 'bucket-onebitflix-victor',
+        bucket: path.join('bucket-onebitflix-victor')
        }
       /*local: {
         bucket: path.join(__dirname, '../../../uploads')
