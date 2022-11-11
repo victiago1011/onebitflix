@@ -15,13 +15,13 @@ export const episodeResourceFeatures: FeatureType[] = [
   
   uploadFileFeature({
     provider: {
-      /* aws: {
+        aws: {
         region: 'us-east-1',
         bucket: 'bucket-onebitflix-victor',
-       }*/
-      local: {
+       }
+      /*local: {
         bucket: path.join(__dirname, '../../../uploads')
-      }
+      }*/
     },
     properties: {
       key: 'videoUrl',
