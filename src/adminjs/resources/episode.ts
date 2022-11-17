@@ -1,5 +1,5 @@
 import path from 'path'
-import uploadFileFeature from '@adminjs/upload'
+import uploadFileFeature, { AWSProvider } from '@adminjs/upload'
 import { FeatureType, ResourceOptions } from 'adminjs'
 import aws from 'aws-sdk'
 
@@ -15,13 +15,13 @@ export const episodeResourceFeatures: FeatureType[] = [
   
   uploadFileFeature({
     provider: {
-        aws: {
+        /*aws: {
         region: 'us-east-1',
-        bucket: path.join('bucket-onebitflix-victor')
-       }
-      /*local: {
+        bucket: path.resolve('bucket-onebitflix-victor')
+       }*/
+      local: {
         bucket: path.join(__dirname, '../../../uploads')
-      }*/
+      }
     },
     properties: {
       key: 'videoUrl',
