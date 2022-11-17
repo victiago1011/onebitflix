@@ -16,13 +16,13 @@ exports.episodeResourceOptions = {
 exports.episodeResourceFeatures = [
     (0, upload_1.default)({
         provider: {
-            aws: {
-                region: 'us-east-1',
-                bucket: path_1.default.resolve('bucket-onebitflix-victor')
+            /*aws: {
+            region: 'us-east-1',
+            bucket: path.resolve('bucket-onebitflix-victor')
+           }*/
+            local: {
+                bucket: path_1.default.join(__dirname, '../../../uploads')
             }
-            /*local: {
-              bucket: path.join(__dirname, '../../../uploads')
-            }*/
         },
         properties: {
             key: 'videoUrl',
