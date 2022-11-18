@@ -16,7 +16,7 @@ exports.adminJs = new adminjs_1.default({
     resources: resources_1.adminJsResources,
     branding: {
         companyName: 'OneBitFlix',
-        logo: '/logoSenai.png',
+        logo: '/logoOnebitflix.svg',
         theme: {
             colors: {
                 primary100: '#ff0043',
